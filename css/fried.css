@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@charset "utf-8";
+
+main {
+  padding: 140px 0 180px;
+  background: #fff;
+}
+
+main .inner {
+  max-width: 1600px;   
+  margin: 0 auto;
+  padding: 0 80px;    
+}
+
+.title {
+  padding: 100px 0 60px;  
+  border-bottom: 1px solid #981b1b;
+  margin-bottom: 80px;
+}
+
+.title h2 {
+  font-size: 56px; 
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.title p {
+  font-size: 20px;
+  color: #561B1B;
+}
+
+.menu_con ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4열 */
+  gap: 90px 80px; 
+  padding: 0;
+}
+
+.menu_con ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.menu_con ul li img {
+  width: 100%;
+  max-width: 260px;     
+  height: 180px;    
+  object-fit: cover;
+  border-radius: 20px;
+  background: #e5e7eb;  /* 이미지 없을 때 placeholder */
+  margin: 0 auto 24px;
+  display: block;
+}
+
+.menu_con .txt_box span {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.menu_con .txt_box p {
+  font-size: 18px;
+  color: #21272A;
+}
+
+.delivery_btn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.delivery_btn a {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #981b1b;
+  color: #4d4d4d;
+  padding: 20px 80px;
+  border-radius: 16px;
+  font-size: 28px;
+  font-weight: 500;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: 0.2s ease;
+}
+
+.delivery_btn a:hover {
+  background: #981b1b;
+  color: #fff;
+}

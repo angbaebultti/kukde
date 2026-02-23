@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+
+
+@media (max-width:1200px) {
+
+  /* header */
+
+  .menu_toggle {
+    display: block;
+    position: relative;
+    z-index: 3000;
+  }
+
+  header .all_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 380px;
+    height: 100vh;
+    background: #f4f4f4;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.35s ease;
+    z-index: 2500;
+    justify-content: center;
+  }
+
+  header .all_menu.is-open {
+    transform: translateX(0);
+  }
+
+  header .gnb {
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 120px;
+  }
+
+  header .gnb>li>a {
+    font-size: 20px;
+    position: relative;
+  }
+
+  header .gnb>li>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #111;
+    transform: none;
+    transition: 0.2s ease;
+  }
+
+  header .gnb>li>a:hover::after {
+    width: 100%;
+  }
+
+  header .sub_menu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0 1 auto;
+  }
+
+  header .icons ul {
+    display: flex;
+    gap: 16px;
+  }
+
+  header .shop_go {
+    width: 100%;
+  }
+
+  header .shop_go a {
+    width: 100%;
+    height: 44px;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+
+  /* footer */
+
+  footer {
+    padding-bottom: 80px;
+  }
+
+  footer .inner {
+    padding: 40px 20px;
+  }
+
+  footer .top {
+    justify-content: center;
+  }
+
+  footer .f_option {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    justify-content: center;
+  }
+
+  footer .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .info {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  footer .copy_right {
+    margin-top: 10px;
+  }
+
+  footer .more_btn {
+    margin-top: 10px;
+  }
+
+  footer .more_btn a {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+
+}
