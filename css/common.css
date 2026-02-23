@@ -72,15 +72,9 @@ main {
 }
 
 header .inner {
-  width: 100%;
-  max-width: 1440px;
-  height: 42px;
-  margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  position: relative;
 }
 
 header h1 {
@@ -105,16 +99,14 @@ header h1 img {
 
 
 header nav {
-  flex: 1;
   display: flex;
   justify-content: center;
 }
-
 header .gnb {
   display: flex;
   align-items: center;
   gap: 44px;
-
+white-space: nowrap;
 }
 
 header .gnb>li>a {
@@ -149,6 +141,7 @@ header .all_menu {
   display: flex;
   align-items: center;
   gap: 40px;
+  justify-self: end;
 }
 
 

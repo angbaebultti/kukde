@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/* ===============================
+   1600px 이하
+================================= */
+@media (max-width:1600px) {
+
+  .main_visual {
+    height: 600px; /* auto 절대 쓰지 마 */
+  }
+
+  .slide1 { background-image: url(../img/mainvisual01-1270.svg); }
+  .slide2 { background-image: url(../img/mainvisual02-1270.svg); }
+  .slide3 { background-image: url(../img/mainvisual03-1270.svg); }
+  .slide4 { background-image: url(../img/mainvisual04-1270.png); }
+
+}
+
+
+/* ===============================
+   1200px 이하 (태블릿)
+================================= */
+@media (max-width:1200px) {
+
+  .main_visual {
+    height: 520px;
+  }
+
+  .main_visual .swiper-slide {
+    background-position: right center;
+  }
+
+  .visual_control {
+    font-size: 14px;
+    gap: 16px;
+  }
+
+  .progress_bar {
+    width: 140px;
+  }
+
+  .prev_btn,
+  .next_btn {
+    font-size: 16px;
+  }
+}
+
+
+/* ===============================
+   1024px 이하 (태블릿 세로)
+================================= */
+@media (max-width:1024px) {
+
+  .main_visual {
+    height: 480px;
+  }
+
+  .slide1 { background-image: url(../img/mainvisual01-1024.svg); }
+  .slide2 { background-image: url(../img/mainvisual02-1024.svg); }
+  .slide3 { background-image: url(../img/mainvisual03-1024.svg); }
+  .slide4 { background-image: url(../img/mainvisual04-1024.png); }
+
+  .visual_control {
+    bottom: 25px;
+  }
+
+}
+
+
+/* ===============================
+   768px 이하 (모바일)
+================================= */
+@media (max-width:768px) {
+
+  .main_visual {
+    height: 420px;
+  }
+
+  .main_visual .swiper-slide {
+    background-position: 65% center;
+  }
+
+  .visual_control {
+    font-size: 12px;
+    gap: 12px;
+    bottom: 20px;
+  }
+
+  .progress_bar {
+    width: 100px;
+  }
+
+}

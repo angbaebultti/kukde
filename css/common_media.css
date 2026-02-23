@@ -1,75 +1,106 @@
 @charset "utf-8";
 
 
+@media (max-width:1280px) {
 
-@media (max-width:1200px) {
+  header {
+    padding: 20px 0;
+  }
 
-  /* header */
+  header h1 {
+    flex: 0 0 180px;
+  }
+
+  header h1 img {
+    width: 130px;
+  }
+
+  header .gnb {
+    gap: 32px;
+  }
+
+  header .gnb > li > a {
+    font-size: 20px;
+  }
+
+  header .all_menu {
+    gap: 28px;
+  }
+
+  header .sub_menu {
+    gap: 20px;
+    padding-left: 24px;
+  }
+
+  header .shop_go a {
+    height: 40px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width:1024px) {
 
   .menu_toggle {
     display: block;
     position: relative;
-    z-index: 3000;
+    z-index: 4000;
+  }
+
+  header .inner {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 80px;
+  }
+
+
+  header .gnb {
+    display: none;
+  }
+
+  header .sub_menu {
+    display: none;
   }
 
   header .all_menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     height: 100vh;
     background: #f4f4f4;
-    padding: 40px 30px;
+    padding: 120px 30px 40px;
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.35s ease;
-    z-index: 2500;
-    justify-content: center;
+    z-index: 3000;
+    justify-content: flex-start;
   }
 
   header .all_menu.is-open {
     transform: translateX(0);
   }
 
-  header .gnb {
+  header .all_menu.is-open .gnb {
+    display: flex;
     flex-direction: column;
     gap: 28px;
-    margin-top: 120px;
   }
 
-  header .gnb>li>a {
+  header .gnb > li > a {
     font-size: 20px;
-    position: relative;
+    white-space: nowrap;
   }
 
-  header .gnb>li>a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 2px;
-    background: #111;
-    transform: none;
-    transition: 0.2s ease;
-  }
-
-  header .gnb>li>a:hover::after {
-    width: 100%;
-  }
-
-  header .sub_menu {
-    margin-top: 40px;
+  header .all_menu.is-open .sub_menu {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex: 0 1 auto;
-  }
-
-  header .icons ul {
-    display: flex;
-    gap: 16px;
+    margin-top: 40px;
   }
 
   header .shop_go {
@@ -83,8 +114,11 @@
     border-radius: 20px;
   }
 
+}
 
-  /* footer */
+
+
+@media (max-width:1024px) {
 
   footer {
     padding-bottom: 80px;
@@ -105,7 +139,6 @@
   }
 
   footer .bottom {
-    display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
@@ -118,10 +151,6 @@
     line-height: 1.6;
   }
 
-  footer .copy_right {
-    margin-top: 10px;
-  }
-
   footer .more_btn {
     margin-top: 10px;
   }
@@ -130,6 +159,114 @@
     width: 100%;
     max-width: 260px;
     justify-content: center;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  /* header 높이 축소 */
+  header {
+    height: 70px;
+    padding: 14px 0;
+  }
+
+  main {
+    padding-top: 70px;
+  }
+
+  /* 로고 축소 */
+  header h1 {
+    flex: 0 0 150px;
+  }
+
+  header h1 img {
+    width: 110px;
+  }
+
+  /* 햄버거 터치 영역 확보 */
+  .menu_toggle {
+    width: 36px;
+    height: 24px;
+  }
+
+  /* 사이드 패널 전체폭 */
+  header .all_menu {
+    max-width: 100%;
+    padding: 100px 24px 40px;
+  }
+
+  /* gnb 모바일 간격 */
+  header .all_menu.is-open .gnb {
+    gap: 24px;
+  }
+
+  header .gnb > li > a {
+    font-size: 18px;
+  }
+
+  /* 아이콘 영역 세로 최적화 */
+  header .all_menu.is-open .sub_menu {
+    gap: 16px;
+  }
+
+  header .shop_go a {
+    height: 44px;
+    font-size: 15px;
+  }
+
+   footer .f_option a {
+    font-size: 16px;
+  }
+
+  footer .bottom p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  footer .bottom p em {
+    font-size: 14px;
+  }
+
+  footer .copy_right p {
+    font-size: 12px;
+  }
+
+  footer .bottom .more_btn a {
+    font-size: 14px;
+    height: 42px;
+  }
+
+}
+
+@media (max-width:480px) {
+
+  header {
+    height: 64px;
+  }
+
+  header .inner{
+    padding: 8px 26px;
+  }
+
+  main {
+    padding-top: 64px;
+  }
+
+  header h1 img {
+    width: 100px;
+  }
+
+  header .gnb > li > a {
+    font-size: 16px;
+  }
+
+  footer .f_option a {
+    font-size: 14px;
+  }
+
+  footer .bottom p {
+    font-size: 13px;
   }
 
 }
