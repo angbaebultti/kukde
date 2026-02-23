@@ -12,11 +12,10 @@ main {
 /* main_visual */
 
 .main_visual {
-    width: 100%;
-    height: 670px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+   width: 100%;
+  height: 670px;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper {
@@ -26,20 +25,51 @@ main {
 }
 
 .main_visual .swiper-slide {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+   height: 100%;
 }
 
+.visual_inner {
+  width: 90%;
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  align-items: center;
+}
+
+.visual_text {
+  color: #fff;
+}
+
+.visual_text h2 {
+  font-size: 56px;
+  margin-bottom: 16px;
+  line-height: 1.2;
+   max-width: 620px;
+}
+
+.visual_text p {
+  font-size: 18px;
+}
+
+.visual_food img {
+    width: 520px;
+  max-width: 100%;
+  height: auto;
+}
 
 .slide1 {
-    background-image: url(../img/mainvisual01.svg);
+  background-image: url(../img/mainvisual01.svg);
 }
 
 .slide2 {
-    background-image: url(../img/mainvisual02.svg);
+      background-image: url(../img/mainvisual02.svg);
 }
 
 .slide3 {
@@ -49,6 +79,14 @@ main {
 .slide4 {
     background-image: url(../img/mainvisual04.svg);
 }
+
+
+.visual_food {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+}
+
 
 .visual_control {
     position: absolute;
@@ -107,7 +145,7 @@ main {
     width: 100%;
     margin: 0 auto;
     background: #ffffff;
-    padding: 200px 0;
+    padding: 140px 0;
 }
 
 .menu_con .inner {
@@ -129,20 +167,22 @@ main {
     font-size: 30px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.65);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .menu_con .menu_box ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .menu_con .menu_box ul li {
-    flex: 1;
-    max-width: 280px;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
 }
-
 
 .menu_con .menu_box ul li img {
     width: 100%;
@@ -275,10 +315,11 @@ main {
 }
 
 .review_con .card_box ul {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .review_con .card {
@@ -293,8 +334,8 @@ main {
         0 8px 20px rgba(0, 0, 0, 0.05),
         0 2px 6px rgba(0, 0, 0, 0.03);
     transition: 0.3s ease;
-    width: calc(33.333% - 27px);
-    max-width: 389px;
+     width: 100%;
+    max-width: 360px;
 }
 
 .review_con .card:hover {
@@ -373,8 +414,6 @@ main {
     font-size: 14px;
     color: #6A7282;
 }
-
-/* ===== 리뷰 하단 메타 ===== */
 
 .review_con .review_meta {
     margin-top: 60px;
@@ -475,7 +514,7 @@ main {
 
 .value_con {
     width: 100%;
-    height: 860px;
+   padding: 160px 0;
     background: #ffffff;
     text-align: center;
     display: flex;
@@ -511,8 +550,9 @@ main {
 
 
 .value_con ul {
-    max-width: 1286px;
-    display: flex;
+    max-width: 1100px;
+    display: grid;                          
+    grid-template-columns: repeat(3, 1fr); 
     justify-content: center;
     gap: 50px;
     width: 100%;
@@ -520,8 +560,9 @@ main {
 }
 
 .value_con ul li {
-    width: 362px;
-    height: 277px;
+    width: 100%;
+    max-width: 320px;
+    min-height: 260px;      
     background: #ffffff;
     border-radius: 28px;
     padding: 48px;
@@ -533,6 +574,7 @@ main {
         0 10px 25px rgba(0, 0, 0, 0.06),
         0 2px 6px rgba(0, 0, 0, 0.04);
     transition: 0.3s ease;
+    margin: 0 auto;       
 }
 
 .value_con ul li:hover {

@@ -1,33 +1,42 @@
 @charset "utf-8";
 
-/* ===============================
-   1600px 이하
-================================= */
-@media (max-width:1600px) {
+@media (max-width:1400px) {
 
   .main_visual {
-    height: 600px; /* auto 절대 쓰지 마 */
+    height: 600px;
   }
 
-  .slide1 { background-image: url(../img/mainvisual01-1270.svg); }
-  .slide2 { background-image: url(../img/mainvisual02-1270.svg); }
-  .slide3 { background-image: url(../img/mainvisual03-1270.svg); }
-  .slide4 { background-image: url(../img/mainvisual04-1270.png); }
+  .visual_text h2 {
+    font-size: 48px;
+  }
+
+  .visual_food img {
+    width: 460px;
+  }
 
 }
 
 
-/* ===============================
-   1200px 이하 (태블릿)
-================================= */
 @media (max-width:1200px) {
 
   .main_visual {
     height: 520px;
   }
 
-  .main_visual .swiper-slide {
-    background-position: right center;
+  .visual_inner {
+    grid-template-columns: 50% 50%;
+  }
+
+  .visual_text h2 {
+    font-size: 42px;
+  }
+
+  .visual_text p {
+    font-size: 16px;
+  }
+
+  .visual_food img {
+    width: 380px;
   }
 
   .visual_control {
@@ -39,55 +48,281 @@
     width: 140px;
   }
 
-  .prev_btn,
-  .next_btn {
-    font-size: 16px;
+   .menu_con .menu_box ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .menu_con {
+    padding: 140px 0;
+  }
+
+    .value_con {
+    padding: 120px 0;
+  }
+
+.value_con ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+  }
+
+ .business_con {
+    padding: 120px 0;
+  }
+
+  .business_con .txt_box h2 {
+    font-size: 40px;
+  }
+
+  .business_con .txt_box .sub {
+    font-size: 22px;
+  }
+
+  .business_con .btn_box {
+    gap: 40px;
+  }
+
+    .search_con {
+    padding: 120px 0;
+  }
+
+  .search_con .txt_box span {
+    font-size: 40px;
+  }
+
+  .search_con .txt_box p {
+    font-size: 28px;
+  }
+
+  .search_result {
+    height: 500px;
   }
 }
 
 
-/* ===============================
-   1024px 이하 (태블릿 세로)
-================================= */
 @media (max-width:1024px) {
 
   .main_visual {
     height: 480px;
   }
 
-  .slide1 { background-image: url(../img/mainvisual01-1024.svg); }
-  .slide2 { background-image: url(../img/mainvisual02-1024.svg); }
-  .slide3 { background-image: url(../img/mainvisual03-1024.svg); }
-  .slide4 { background-image: url(../img/mainvisual04-1024.png); }
+  .visual_text h2 {
+    font-size: 36px;
+  }
+
+  .visual_food img {
+    width: 320px;
+  }
 
   .visual_control {
     bottom: 25px;
   }
 
+.search_top {
+    flex-wrap: wrap; 
+  }
+
+  .search_top select {
+    flex: 1 1 calc(50% - 10px);  
+  }
+
+  .search_top select:last-child {
+    flex: 1 1 100%; 
+  }
+
+
 }
 
+@media (max-width:900px) {
 
-/* ===============================
-   768px 이하 (모바일)
-================================= */
+  .review_con .card_box ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+    .review_con .card_box ul li {
+    display: flex;       
+    justify-content: center;  
+  }
+
+  .review_con .card {
+ width: 100%;
+    max-width: 100%;
+
+}
+}
+
 @media (max-width:768px) {
 
   .main_visual {
-    height: 420px;
+    height: 460px;  
   }
 
-  .main_visual .swiper-slide {
-    background-position: 65% center;
+  .visual_inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-content: center;   
+    gap: 12px;             
+  }
+
+  .visual_text h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .visual_text p {
+    font-size: 14px;
+  }
+
+  .visual_food {
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 8px;  
+  }
+
+  .visual_food img {
+    width: 240px;  
   }
 
   .visual_control {
-    font-size: 12px;
-    gap: 12px;
-    bottom: 20px;
+    bottom: 18px;
   }
 
   .progress_bar {
-    width: 100px;
+    width: 90px;
+  }
+
+.menu_con {
+    padding: 90px 0;
+  }
+
+  .menu_con .tit h2 {
+    font-size: 32px;
+  }
+
+  .menu_con .tit p {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+.value_con {
+    padding: 90px 0;
+  }
+
+ .value_con ul {
+    grid-template-columns: 1fr;
+    max-width: 420px;   
+    margin: 0 auto;
+  }
+
+  .value_con ul li {
+    max-width: 100%;   
+    min-height: 240px;
+    padding: 40px;
+  }
+
+
+  .value_con h2 {
+    font-size: 32px;
+  }
+
+  .value_con > p {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .value_con > em {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+   .business_con {
+    padding: 90px 0;
+    min-height: auto;
+  }
+
+  .business_con .inner {
+    gap: 40px;
+  }
+
+  .business_con .txt_box h2 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .business_con .txt_box .sub {
+    font-size: 16px;
+  }
+
+  .business_con .btn_box {
+    flex-direction: row;     
+    gap: 16px;           
+    justify-content: center;
+    flex-wrap: wrap;         
+  }
+
+  .business_con .btn_box a {
+    width: auto;            
+    padding: 0 24px;
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .business_con .notice {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+   .search_con {
+    padding: 90px 0;
+  }
+
+  .search_con .txt_box span {
+    font-size: 28px;
+  }
+
+  .search_con .txt_box p {
+    font-size: 18px;
+  }
+
+.search_top {
+    display: block;   
+  }
+
+  .search_top select {
+    display: block;
+    width: 100%;
+    height: 52px;
+    margin-bottom: 14px;   
+    box-sizing: border-box;
+    padding: 0 36px 0 16px;
+    background-position: right 16px center;
+  }
+
+  .search_top select:last-child {
+    margin-bottom: 0;
+  }
+
+
+  .search_result {
+    height: 400px;
+  }
+
+}
+
+
+@media (max-width:700px) {
+
+  .review_con .card_box ul {
+    grid-template-columns: 1fr;
+  }
+
+  .review_con .card {
+    max-width: 100%;
+  }
+
+  .review_con {
+    padding: 100px 0;
   }
 
 }
