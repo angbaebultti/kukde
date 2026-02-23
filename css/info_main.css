@@ -77,10 +77,12 @@
   justify-content: center;
   gap: 60px;
   margin-top: 80px;
+  flex-wrap: wrap;
 }
 
 .select li {
-  width: 400px;
+  max-width: 400px;
+  flex: 1 1 320px;
   padding: 60px 50px;
   background: #fff;
   border: 1px solid #e5e5e5;
@@ -127,6 +129,10 @@
   text-align: center;
 }
 
+.process .txt_box{
+  margin-bottom: 50px;
+}
+
 .process .txt_box h3 {
   font-size: 48px;
   font-weight: 700;
@@ -139,25 +145,26 @@
 }
 
 .process ul {
-  margin-top: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 40px;
 }
 
 .process li {
   width: 300px;
-  padding: 45px 35px 40px;
+  padding: 45px 35px 0px;
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   position: relative;
   text-align: center;
 }
-
 .process li i {
   font-size: 40px;
+}
+
+.process li:nth-child(5) {
+  grid-column: 2 / 4;
 }
 
 .process .num {
@@ -229,10 +236,12 @@
   display: flex;
   justify-content: center;
   gap: 60px;
+  flex-wrap: wrap;
 }
 
 .expense>.inner>ul>li {
-  width: 560px;
+  max-width: 560px;
+  flex: 1 1 480px;
   background: #ffffff;
   border-radius: 20px;
   padding: 48px 48px 40px;
@@ -307,7 +316,8 @@
 }
 
 .expense .warning .txt_box {
-  width: 1150px;
+  max-width: 1150px;
+  width: 100%;
   background: #dbe5f1;
   padding: 26px 40px;
   border-radius: 18px;
@@ -377,7 +387,8 @@
 }
 
 .application form {
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -480,7 +491,7 @@
 }
 
 .contact_info .inner {
-  max-width: 1150px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -488,14 +499,15 @@
   display: flex;
   justify-content: center;
   gap: 80px;
+   flex-wrap: wrap;
 }
 
 .contact_info li {
-  width: 400px;
-  height: 380px;
+  max-width: 400px;
+  width: 320px;
+  flex: 0 0 320px;
   aspect-ratio: 1 / 1;
   background: #ffffff;
-
   border: 1px solid #e5e5e5;
   border-radius: 18px;
   padding: 60px 30px;

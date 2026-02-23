@@ -40,14 +40,13 @@ body.menu-open {
 .wrap {
   width: 100%;
   overflow-x: hidden;
-  /* 혹시 모를 가로 스크롤 방지 */
 }
 
 .inner {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 80px;
 }
 
 .menu-open {
@@ -149,7 +148,6 @@ header .all_menu {
   width: 32px;
   height: 22px;
   display: none;
-  /* 기본은 데스크탑 숨김 */
   position: relative;
   background: none;
   border: none;
@@ -227,8 +225,6 @@ header .icons img {
   width: 36px;
   height: 36px;
   display: block;
-
-  /* 모노톤화 */
   filter: grayscale(100%) brightness(0.25);
   transition: filter 0.2s ease, transform 0.2s ease;
 }

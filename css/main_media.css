@@ -118,6 +118,14 @@
     bottom: 25px;
   }
 
+  .review_con .review_txt{
+    font-size: 16px;
+  }
+
+  .review_con .people{
+    font-size: 14px;
+  }
+
 .search_top {
     flex-wrap: wrap; 
   }

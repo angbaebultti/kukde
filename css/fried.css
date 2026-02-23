@@ -13,6 +13,35 @@ main .inner {
   padding: 0 80px;    
 }
 
+.top_url {
+  padding: 40px 0 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.top_url nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top_url nav .home span{
+    margin-left: 10px;
+}
+
+.top_url nav .home span, 
+.top_url nav a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.top_url nav .current{
+     font-size: 16px;
+    font-weight: 400;}
+
 .title {
   padding: 100px 0 60px;  
   border-bottom: 1px solid #981b1b;
