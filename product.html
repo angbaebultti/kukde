@@ -15,6 +15,7 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/product.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -76,20 +77,23 @@
 <div class="inner">
 <h3>오늘 어떤 상황이신가요?</h3>
 <div class="menu_option">
-<div class="solo_category">
-<a href="solo_menu.html"><span><i class="fa-solid fa-user"></i></span> 혼자 간단히</a>
-</div><!--//. solo_category-->
-<div class="together_category">
-<a href="together_menu.html"><span><i class="fa-solid fa-user-group"></i></span> 둘이서 배부르게</a>
-</div><!-- //. together_category-->
-<div class="spicy_category">
-<a href="spicy._menu.html"><span><i class="fa-solid fa-fire"></i></span> 스트레스 풀기</a>
-</div><!-- //.spicy_category -->
+<button data-filter="solo" class="active">
+    <i class="fa-solid fa-user"></i>
+    <span>혼자 간단히</span>
+  </button>
+  <button data-filter="together">
+    <i class="fa-solid fa-user-group"></i>
+    <span>둘이서 배부르게</span>
+  </button>
+  <button data-filter="spicy">
+    <i class="fa-solid fa-fire"></i>
+    <span>스트레스 풀기</span>
+  </button>
 </div><!-- //.menu_option -->
 <section class="set_menu_con">
   <h3>상황에 다른 추천 메뉴 세트들</h3>
   <ul>
-    <li>
+    <li class="menu_item" data-category="solo">
       <img src="img/img19.png" alt="떡튀순오 사진">
       <div class="txt_box">
         <em>1인 떡튀순오</em>
@@ -98,7 +102,7 @@
       </div>
       <div class="best">재구매율<br>1위</div><!-- //.best -->
     </li>
-    <li>
+    <li class="menu_item" data-category="together">
       <img src="img/img23.jpg" alt="국대세트1 사진">
       <div class="txt_box">
         <em>국대세트1</em>
@@ -106,7 +110,7 @@
         <span>혼자서 배부르게 즐기는<br> 떡볶이, 튀김, 순대, 오뎅</span>
       </div>
     </li>
-    <li>
+    <li class="menu_item" data-category="together">
       <img src="img/img24.jpg" alt="둘둘둘 세트 사진">
       <div class="txt_box">
         <em>둘둘둘 세트</em>
@@ -120,7 +124,7 @@
   <h3>다른 메뉴도 같이 즐겨 보세요!</h3>
   <ul>
     <li>
-      <img src="img/img17.png" alt="국대떡볶이 tkwls">
+      <img src="img/img17.png" alt="국대떡볶이 사진">
       <div class="txt_box">
         <em>국물떡볶이</em>
         <p>4,500원</p>
@@ -135,7 +139,7 @@
         <span>국대는 숨은 순대 맛집</span>
       </div><!-- //.txt_box -->
     </li>
-    <li>
+    <li class="menu_item" data-category="spicy">
       <img src="img/img18.png" alt="소떡소떡 사진">
       <div class="txt_box">
         <em>소떡소떡</em>
@@ -144,7 +148,7 @@
       </div><!-- //.txt_box -->
     </li>
     <li>
-      <img src="img/img14.png" alt="치킨마요덮밥 사진">
+      <img src="img/img14.png" alt="치킨마요컵밥 사진">
       <div class="txt_box">
         <em>치킨마요컵밥</em>
         <p>5,500원</p>

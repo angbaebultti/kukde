@@ -36,11 +36,11 @@ main .inner h3{
 .menu_option {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
   margin: 40px 0 150px;
 }
 
-.menu_option>div {
+.menu_option button {
   padding: 14px 28px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -52,14 +52,24 @@ main .inner h3{
   transition: 0.2s ease;
 }
 
-.menu_option>div span {
-  margin-right: 6px;
-}
-
-.menu_option > div:hover {
+.menu_option button:hover {
   background: #981b1b;
   color: #fff;
   border-color: #981b1b;
+}
+
+.menu_option button.active {
+  background: #981b1b;
+  color: #fff;
+  border-color: #981b1b;
+   transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+
+
+.menu_option button i {
+  font-size: 18px;
 }
 
 .set_menu_con {
