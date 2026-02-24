@@ -14,7 +14,7 @@ font-family: "Roboto", sans-serif;
   --Roboto: "Roboto", sans-serif;
   --point_color: #CE902E;
   --footer_color: #AFAFAF;
-  --brand_red: #B3261E;
+  --brand_red: #981b1b;
   --brand_light_red: rgba(179, 38, 30, 0.3);
   --brand_navy: #1F2A44;
   --brand_cream: #FEE3C1;
@@ -101,11 +101,12 @@ header nav {
   display: flex;
   justify-content: center;
 }
+
 header .gnb {
   display: flex;
   align-items: center;
   gap: 44px;
-white-space: nowrap;
+  white-space: nowrap;
 }
 
 header .gnb>li>a {
@@ -134,6 +135,10 @@ header .gnb>li>a::after {
 
 header .gnb>li>a:hover::after {
   width: 100%;
+}
+
+header .gnb>li.ready>a::after {
+  background: var(--brand_red);
 }
 
 header .all_menu {
@@ -206,7 +211,6 @@ header .sub_menu {
   padding-left: 40px;
 }
 
-/* 아이콘 리스트 */
 header .icons ul {
   display: flex;
   align-items: center;

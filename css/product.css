@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 main {
-  padding: 120px 0 160px;
-  background: #f7f7f7;
+  padding: 0;
+  background: #fff;
 }
 
 main .inner {
@@ -10,284 +10,312 @@ main .inner {
   margin: 0 auto;
 }
 
-main>.txt_box {
+
+.product_view {
+  display: none;
+}
+
+.product_view.active {
+  display: block;
+}
+
+.product_intro {
+  padding: 200px 0 120px;
   text-align: center;
-  margin-bottom: 150px;
+  background: #fff;
 }
 
-main>.txt_box h2 {
-  font-size: 48px;
+.product_intro h2 {
+  font-size: 44px;
   font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  padding-top: 80px;
+  line-height: 1.45;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
 }
 
-main>.txt_box p {
-  font-size: 24px;
-  color: #777;
+.product_intro p {
+  font-size: 18px;
+  color: #981b1b;
+  font-weight: 400;
 }
 
-main .inner h3{
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
+.situation_select {
+  padding: 140px 0 160px;
+  background: #fcfcfc;
+  position: relative;
 }
+
+.situation_select h3 {
+  font-size: 34px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  letter-spacing: -0.3px;
+}
+
 .menu_option {
   display: flex;
   justify-content: center;
-  gap: 80px;
-  margin: 40px 0 150px;
+  gap: 40px;
 }
 
 .menu_option button {
-  padding: 14px 28px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 16px 36px;
+  border: 1px solid #e3e3e3;
+  border-radius: 999px;
   background: #fff;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
-  letter-spacing: -0.2px;
-  font-weight: 600;
-  transition: 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .menu_option button:hover {
-  background: #981b1b;
-  color: #fff;
   border-color: #981b1b;
+  color: #981b1b;
+  transform: translateY(-3px);
 }
 
 .menu_option button.active {
   background: #981b1b;
   color: #fff;
   border-color: #981b1b;
-   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-}
-
-
-
-.menu_option button i {
-  font-size: 18px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
 }
 
 .set_menu_con {
-  margin-bottom: 140px;
-  text-align: center;
+  padding: 140px 0;
+  background: #fafafa;
 }
 
 .set_menu_con h3 {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
-  margin-bottom: 80px;
+  text-align: center;
+  margin-bottom: 90px;
 }
 
 .set_menu_con ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
 }
 
 .set_menu_con li {
-  flex: 1;
   background: #fff;
-  padding: 30px 20px 40px;
-  border-radius: 12px;
+  padding: 28px 24px 36px;
+  border-radius: 18px;
   position: relative;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .set_menu_con li:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
 .set_menu_con li img {
   width: 100%;
   height: 220px;
-  background: #ddd;
-  border-radius: 8px;
-  margin-bottom: 24px;
+  border-radius: 14px;
+  margin-bottom: 26px;
   object-fit: cover;
 }
 
-.set_menu_con .txt_box em {
+.set_menu_con em {
   display: block;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.set_menu_con .txt_box p {
   font-size: 20px;
-  color: #981b1b;
-  font-weight: 400;
-  margin-bottom: 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
-.set_menu_con .txt_box span {
+.set_menu_con p {
   font-size: 18px;
-  color: #666;
-  line-height: 1.5;
-  font-weight: 300;
+  color: #981b1b;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
+.set_menu_con span {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+}
 
 .set_menu_con .best {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-  height: 80px;
+  top: 18px;
+  right: 18px;
+  width: 70px;
+  height: 70px;
   background: #981b1b;
   color: #fff;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.2;
   text-align: center;
+  line-height: 1.3;
 }
 
+
 .other_menu_con {
-  margin-bottom: 140px;
+  padding: 160px 0;
   text-align: center;
+  background: #fff;
 }
 
 .other_menu_con h3 {
-  font-size: 40px;
-  margin-bottom: 60px;
+  font-size: 34px;
+  margin-bottom: 90px;
+  font-weight: 600;
 }
 
 .other_menu_con ul {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 50px;
+  justify-content: center;
+  gap: 60px;
 }
 
 .other_menu_con li {
-  flex: 1;
+  flex: 0 0 280px;
   background: #fff;
-  padding: 24px 16px 30px;
-  border-radius: 10px;
-  transition: 0.3s ease;
+  padding: 32px 24px 40px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .other_menu_con li:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.07);
 }
 
 .other_menu_con li img {
   width: 100%;
-  height: 150px;
-  background: #ddd;
-  border-radius: 6px;
-  margin-bottom: 22px;
+  height: 200px;
+  border-radius: 16px;
+  margin-bottom: 26px;
   object-fit: cover;
 }
 
 .other_menu_con em {
-  display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .other_menu_con p {
-  font-size: 20px;
+  font-size: 18px;
   color: #981b1b;
-  margin-bottom: 12px;
-  font-weight: 400;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .other_menu_con span {
-  font-size: 16px;
-  color: #777;
-  font-weight: 300;
+  font-size: 15px;
+  color: #888;
 }
 
-
 .order_notice {
-  text-align: center;
-  margin: 80px 0 24px;
+  margin-top: 90px;
 }
 
 .order_notice p {
   display: inline-block;
-  background: #9e3a37;
+  padding: 12px 28px;
+  background: #981b1b;
   color: #fff;
-  padding: 8px 18px;
-  font-size: 30px;
-  border-radius: 3px;
-  font-weight: 400;
+  font-size: 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.order_notice p:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+  background: #b32020;
 }
 
 .sub_menu_con {
+  padding: 140px 0;
+  background: #fafafa;
   text-align: center;
-  padding-bottom: 140px;
 }
 
 .sub_menu_con h3 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .sub_category {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   margin-bottom: 100px;
 }
 
 .sub_category li {
-  background: #e9e9e9;
-  padding: 18px 50px;
-  border-radius: 12px;
-  transition: 0.2s ease;
+  flex: 0 0 260px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  transition: all 0.25s ease;
 }
 
 .sub_category li:hover {
-  background: #dcdcdc;
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.06);
+  border-color: #981b1b;
 }
 
 .sub_category p {
-  font-size: 26px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.sub_category a {
+  font-size: 15px;
+  color: #981b1b;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.sub_category a::after {
+  content: " →";
+  transition: transform 0.2s ease;
+}
+
+.sub_category li:hover a::after {
+  transform: translateX(4px);
 }
 
 .more_small {
-  display: inline-block;
-  padding: 4px 14px;
-  font-size: 16px;
-  background: #d3d3d3;
-  border-radius: 50px;
+  font-size: 14px;
+  color: #777;
 }
 
-.main_cta {
-  text-align: center;
-}
 
 .main_cta a {
   display: inline-block;
-  padding: 16px 48px;
-  background: #9e3a37;
+  padding: 18px 56px;
+  background: #981b1b;
   color: #fff;
-  border-radius: 10px;
-  font-size: 22px;
+  border-radius: 999px;
+  font-size: 18px;
   font-weight: 600;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  transition: 0.25s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .main_cta a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }

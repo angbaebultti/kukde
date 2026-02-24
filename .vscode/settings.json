@@ -1,0 +1,27 @@
+{
+  // 저장 시 자동 포맷 + ESLint 자동 고침
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // 이 프로젝트에선 JS 포맷터를 ESLint로 고정
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+
+  // ESLint v9(Flat) + 검사 대상
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "eslint.workingDirectories": [
+    { "mode": "auto" },
+    { "directory": ".", "changeProcessCWD": true }
+  ],
+
+  // 언어별 포맷터(충돌 방지)
+  "[css]":  { "editor.defaultFormatter": "vscode.css-language-features" },
+  "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.maxTokenizationLineLength": 2500
+  }
+}

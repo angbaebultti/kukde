@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-     <meta name="description" content="국대떡볶이 공식 홈페이지입니다. 매콤달콤한 떡볶이와 튀김, 오뎅 등 인기 메뉴 소개부터 전국 매장 찾기, 체계적인 창업 안내까지 한눈에 확인하세요.">
+  <meta charset="UTF-8">
+  <meta name="description" content="국대떡볶이 공식 홈페이지입니다. 매콤달콤한 떡볶이와 튀김, 오뎅 등 인기 메뉴 소개부터 전국 매장 찾기, 체계적인 창업 안내까지 한눈에 확인하세요.">
   <meta name="keywords" content="국대떡볶이, 떡볶이 맛집, 분식 프랜차이즈, 떡볶이 창업, 분식 창업, 매장 찾기, 떡볶이 메뉴">
   <meta name="author" content="Juhee Hong">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://kit.fontawesome.com/b43057b3ba.js" crossorigin="anonymous"></script>
-    <title>kukde</title>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-     <link rel="stylesheet" href="css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b43057b3ba.js" crossorigin="anonymous"></script>
+  <title>kukde</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="css/common_media.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="css/product_media.css">
+  <link rel="stylesheet" href="css/solo_msenu.css">
+  <link rel="stylesheet" href="css/together_menu.css">
+  <link rel="stylesheet" href="css/spicy_menu.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/common.js"></script>
   <script src="js/product.js"></script>
 </head>
+
 <body>
-    <div class="wrap">
- <header class="">
+  <div class="wrap">
+    <header>
       <div class="inner">
         <h1>
           <a href="index.html">
             <img src="" alt="">
           </a>
         </h1>
-         <div class="all_menu">
+        <div class="all_menu">
           <nav class="main_nav">
             <ul class="gnb">
               <li><a href="#">브랜드소개</a></li>
@@ -66,120 +73,409 @@
           <span></span>
           <span></span>
         </button>
-       
       </div><!-- //.inner -->
     </header>
-<main>
-<div class="txt_box">
-  <h2>오늘 뭐 먹지?<br>국대떡볶이 메뉴를 취향에 맞게 골라보세요</h2>
-  <p>메뉴 항목과 가격은 각 매장의 사정에 따라 기재된 내용과 다를 수 있습니다</p>
-</div><!-- //.txt_box -->
-<div class="inner">
-<h3>오늘 어떤 상황이신가요?</h3>
-<div class="menu_option">
-<button data-filter="solo" class="active">
-    <i class="fa-solid fa-user"></i>
-    <span>혼자 간단히</span>
-  </button>
-  <button data-filter="together">
-    <i class="fa-solid fa-user-group"></i>
-    <span>둘이서 배부르게</span>
-  </button>
-  <button data-filter="spicy">
-    <i class="fa-solid fa-fire"></i>
-    <span>스트레스 풀기</span>
-  </button>
-</div><!-- //.menu_option -->
-<section class="set_menu_con">
-  <h3>상황에 다른 추천 메뉴 세트들</h3>
-  <ul>
-    <li class="menu_item" data-category="solo">
-      <img src="img/img19.png" alt="떡튀순오 사진">
-      <div class="txt_box">
-        <em>1인 떡튀순오</em>
-        <p>13,900원</p>
-        <span>혼자서 즐기는<br> 떡볶이, 튀김, 순대, 오뎅</span>
-      </div>
-      <div class="best">재구매율<br>1위</div><!-- //.best -->
-    </li>
-    <li class="menu_item" data-category="together">
-      <img src="img/img23.jpg" alt="국대세트1 사진">
-      <div class="txt_box">
-        <em>국대세트1</em>
-        <p>18,800원</p>
-        <span>혼자서 배부르게 즐기는<br> 떡볶이, 튀김, 순대, 오뎅</span>
-      </div>
-    </li>
-    <li class="menu_item" data-category="together">
-      <img src="img/img24.jpg" alt="둘둘둘 세트 사진">
-      <div class="txt_box">
-        <em>둘둘둘 세트</em>
-        <p>30,800원</p>
-        <span>국대 대표 메뉴를<br>잘 즐길 수 있는 방법</span>
-      </div>
-    </li>
-  </ul>
-</section><!-- //.set_menu_con -->
-<section class="other_menu_con">
-  <h3>다른 메뉴도 같이 즐겨 보세요!</h3>
-  <ul>
-    <li>
-      <img src="img/img17.png" alt="국대떡볶이 사진">
-      <div class="txt_box">
-        <em>국물떡볶이</em>
-        <p>4,500원</p>
-        <span>국대떡볶이, 맛도 국대</span>
-      </div><!-- //.txt_box -->
-    </li>
-    <li>
-      <img src="img/img22.png" alt="순대 사진">
-      <div class="txt_box">
-        <em>찰순대</em>
-        <p>5,000원</p>
-        <span>국대는 숨은 순대 맛집</span>
-      </div><!-- //.txt_box -->
-    </li>
-    <li class="menu_item" data-category="spicy">
-      <img src="img/img18.png" alt="소떡소떡 사진">
-      <div class="txt_box">
-        <em>소떡소떡</em>
-        <p>4,000원</p>
-        <span>소시지  떡 소시지 떡</span>
-      </div><!-- //.txt_box -->
-    </li>
-    <li>
-      <img src="img/img14.png" alt="치킨마요컵밥 사진">
-      <div class="txt_box">
-        <em>치킨마요컵밥</em>
-        <p>5,500원</p>
-        <span>떡볶이와의 최고의 궁합</span>
-      </div><!-- //.txt_box -->
-    </li>
-  </ul>
-    <div class="order_notice">
-    <p>“메뉴를 골랐다면, 지금 배달앱에서 확인해보세요.”</p>
-  </div><!-- //.order_notice -->
-</section><!-- //.other_menu_con -->
-<section class="sub_menu_con">
-  <h3>다른 메뉴도 둘러보세요</h3>
-  <ul class="sub_category">
-    <li>
-      <p>튀김</p>
-      <a href="fried.html" class="more_small">더보기</a>
-    </li>
-    <li>
-      <p>사이드&음료</p>
-      <a href="sidedrink.html" class="more_small">더보기</a>
-    </li>
-  </ul>
-
-  <div class="main_cta">
-    <a href="#">배달 앱 주문하러 가기 ></a>
-  </div>
-</section><!-- //.sub_menu_con -->
-</div><!-- //.inner -->
-</main>
- <footer>
+    <main>
+      <div class="product_view active" id="default_view">
+        <section class="product_intro">
+          <div class="inner">
+            <div class="txt_box">
+              <h2>
+                오늘 뭐 먹지?<br>
+                국대떡볶이 메뉴를 취향에 맞게 골라보세요
+              </h2>
+              <p>
+                메뉴 항목과 가격은 각 매장의 사정에 따라 기재된 내용과 다를 수 있습니다
+              </p>
+            </div><!-- //.txt_box -->
+          </div><!-- //.inner -->
+        </section><!-- //.product_intro -->
+        <section class="situation_select">
+          <div class="inner">
+            <h3>오늘 어떤 상황이신가요?</h3>
+            <div class="menu_option">
+              <button data-tab="solo">혼자 간단히</button>
+              <button data-tab="together">둘이서 배부르게</button>
+              <button data-tab="spicy">스트레스 풀기</button>
+            </div><!-- //.menu_option -->
+          </div><!-- //.inner -->
+        </section><!-- //.situation_select -->
+        <section class="set_menu_con">
+          <div class="inner">
+            <h3>상황에 따른 추천 메뉴 세트들</h3>
+            <ul>
+              <li>
+                <img src="img/img19.png" alt="떡튀순오 사진">
+                <div class="txt_box">
+                  <em>1인 떡튀순오</em>
+                  <p>13,900원</p>
+                  <span>혼자서 즐기는<br> 떡볶이, 튀김, 순대, 오뎅</span>
+                </div>
+                <div class="best">재구매율<br>1위</div>
+              </li>
+              <li>
+                <img src="img/img23.jpg" alt="국대세트1 사진">
+                <div class="txt_box">
+                  <em>국대세트1</em>
+                  <p>18,800원</p>
+                  <span>혼자서 배부르게 즐기는<br> 떡볶이, 튀김, 순대, 오뎅</span>
+                </div>
+              </li>
+              <li>
+                <img src="img/img24.jpg" alt="둘둘둘 세트 사진">
+                <div class="txt_box">
+                  <em>둘둘둘 세트</em>
+                  <p>30,800원</p>
+                  <span>국대 대표 메뉴를<br>잘 즐길 수 있는 방법</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section><!-- //.set_menu_con -->
+        <section class="other_menu_con">
+          <div class="inner">
+            <h3>다른 메뉴도 같이 즐겨 보세요!</h3>
+            <ul>
+              <li>
+                <img src="img/img17.png" alt="국대떡볶이 사진">
+                <div class="txt_box">
+                  <em>국물떡볶이</em>
+                  <p>4,500원</p>
+                  <span>국대떡볶이, 맛도 국대</span>
+                </div>
+              </li>
+              <li>
+                <img src="img/img22.png" alt="순대 사진">
+                <div class="txt_box">
+                  <em>찰순대</em>
+                  <p>5,000원</p>
+                  <span>국대는 숨은 순대 맛집</span>
+                </div>
+              </li>
+              <li>
+                <img src="img/img18.png" alt="소떡소떡 사진">
+                <div class="txt_box">
+                  <em>소떡소떡</em>
+                  <p>4,000원</p>
+                  <span>소시지 떡 소시지 떡</span>
+                </div>
+              </li>
+              <li>
+                <img src="img/img14.png" alt="치킨마요컵밥 사진">
+                <div class="txt_box">
+                  <em>치킨마요컵밥</em>
+                  <p>5,500원</p>
+                  <span>떡볶이와의 최고의 궁합</span>
+                </div>
+              </li>
+            </ul>
+            <div class="order_notice">
+              <p>“메뉴를 골랐다면, 지금 배달앱에서 확인해보세요.”</p>
+            </div><!-- //.order_notice -->
+          </div>
+        </section><!-- //.other_menu_con -->
+        <section class="sub_menu_con">
+          <div class="inner">
+            <h3>다른 메뉴도 둘러보세요</h3>
+            <ul class="sub_category">
+              <li>
+                <p>튀김</p>
+                <a href="fried.html" class="more_small">더보기</a>
+              </li>
+              <li>
+                <p>사이드&음료</p>
+                <a href="sidedrink.html" class="more_small">더보기</a>
+              </li>
+            </ul>
+            <div class="main_cta">
+              <a href="#">배달 앱 주문하러 가기 ></a>
+            </div>
+          </div>
+        </section><!-- //. sub_menu_con-->
+      </div><!-- //#default_view -->
+      <div class="product_view" id="solo_view">
+        <div class="top_url">
+          <nav>
+            <a href="#" class="home">
+              <i class="fa-solid fa-house"></i>
+              <span>홈</span>
+            </a>
+            <span class="separator">&gt;</span>
+            <a href="#">메뉴</a>
+            <span class="separator">&gt;</span>
+            <span class="current">혼자 간단히</span>
+          </nav>
+        </div><!-- //.top_url -->
+        <div class="title">
+          <h2>혼자 간단히</h2>
+          <p>혼자 먹기 좋은 메뉴를 모았어요</p>
+        </div><!-- //.title -->
+        <div class="menu_option">
+          <button data-tab="solo" class="active">
+            <i class="fa-solid fa-user"></i> 혼자 간단히
+          </button>
+          <button data-tab="together">
+            <i class="fa-solid fa-user-group"></i> 둘이서 배부르게
+          </button>
+          <button data-tab="spicy">
+            <i class="fa-solid fa-fire"></i> 스트레스 풀기
+          </button>
+        </div><!-- //.menu_option -->
+        <div class="inner">
+          <div class="best_box">
+            <div class="left">
+              <div class="badge">재구매 1위</div>
+              <div class="txt_box">
+                <em>1인 떡튀순오</em>
+                <p>13,900원</p>
+                <span>혼자서 즐기는<br> 떡볶이, 튀김, 순대, 오뎅</span>
+              </div>
+            </div>
+            <div class="right">
+              <img src="img/img19.png" alt="떡튀순오 사진">
+            </div>
+          </div><!-- //.best_box -->
+          <div class="menu_all">
+            <ul>
+              <li>
+                <img src="img/img40.png" alt="국물떡볶이 사진">
+                <div class="txt_box">
+                  <em>국물떡볶이</em>
+                  <p>4,500원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img38.png" alt="치즈떡볶이 사진">
+                <div class="txt_box">
+                  <em>치즈떡볶이</em>
+                  <p>6,000원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img39.png" alt="새우우동 사진">
+                <div class="txt_box">
+                  <em>새우우동</em>
+                  <p>5,500원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img13.png" alt="참치마요컵밥 사진">
+                <div class="txt_box">
+                  <em>참치마요컵밥</em>
+                  <p>5,500원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img21.png" alt="찰순대(내장포함) 사진">
+                <div class="txt_box">
+                  <em>찰순대(내장포함)</em>
+                  <p>5,500원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img03.png" alt="옛날핫도그 사진">
+                <div class="txt_box">
+                  <em>옛날핫도그</em>
+                  <p>3,000원</p>
+                </div><!-- //.txt_box -->
+              </li>
+            </ul>
+          </div><!-- //.menu_all -->
+          <div class="delivery_btn">
+            <a href="#">배달앱 주문하러 가기 <i class="fa-solid fa-angle-right"></i></a>
+          </div><!-- //.delivery_btn -->
+        </div><!-- //.inner -->
+      </div><!-- //.product_view #solo_view -->
+      <div class="product_view" id="together_view">
+        <div class="top_url">
+          <nav>
+            <a href="#" class="home">
+              <i class="fa-solid fa-house"></i>
+              <span>홈</span>
+            </a>
+            <span class="separator">&gt;</span>
+            <a href="#">메뉴</a>
+            <span class="separator">&gt;</span>
+            <span class="current">둘이서 배부르게</span>
+          </nav>
+        </div><!-- //.top_url -->
+        <div class="title">
+          <h2>둘이서 배부르게</h2>
+          <p>가족, 친구, 연인과 함께 국대를</p>
+        </div><!-- //.title -->
+        <div class="menu_option">
+          <button data-tab="solo">
+            <i class="fa-solid fa-user"></i> 혼자 간단히
+          </button>
+          <button data-tab="together" class="active">
+            <i class="fa-solid fa-user-group"></i> 둘이서 배부르게
+          </button>
+          <button data-tab="spicy">
+            <i class="fa-solid fa-fire"></i> 스트레스 풀기
+          </button>
+        </div><!-- //.menu_option -->
+        <div class="inner">
+          <div class="best_box">
+            <div class="left">
+              <div class="badge">재구매 1위</div><!-- //.badge -->
+              <div class="txt_box">
+                <em>상비군세트2</em>
+                <p>22,200원</p>
+                <span>국대 인기메뉴 총집합</span>
+              </div><!-- //.txt_box -->
+            </div><!-- //.left -->
+            <div class="right">
+              <img src="img/img27.jpg" alt="상비군 세트2 사진">
+            </div><!-- //.right-->
+          </div><!-- //.best_box -->
+          <div class="menu_all">
+            <ul>
+              <li>
+                <img src="img/img19.png" alt="1인세트 떡순튀오">
+                <div class="txt_box">
+                  <em>1인세트 떡순튀오</em>
+                  <p>13,900원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img23.jpg" alt="국대세트1">
+                <div class="txt_box">
+                  <em>국대세트1</em>
+                  <p>18,800원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img24.jpg" alt="국대세트2">
+                <div class="txt_box">
+                  <em>국대세트2</em>
+                  <p>21,800원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img25.jpg" alt="둘둘둘 세트">
+                <div class="txt_box">
+                  <em>둘둘둘 세트</em>
+                  <p>30,800원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img26.jpg" alt="상비군 세트1">
+                <div class="txt_box">
+                  <em>상비군 세트1</em>
+                  <p>19,200원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img27.jpg" alt="상비군 세트2">
+                <div class="txt_box">
+                  <em>상비군 세트2</em>
+                  <p>22,200원</p>
+                </div><!-- //.txt_box -->
+              </li>
+            </ul>
+          </div><!-- //.menu_all -->
+          <div class="delivery_btn">
+            <a href="#">배달앱 주문하러 가기 <i class="fa-solid fa-angle-right"></i></a>
+          </div><!-- //.delivery_btn -->
+        </div><!-- //.inner -->
+      </div><!-- //.product_view #together_view -->
+      <div class="product_view" id="spicy_view">
+        <div class="top_url">
+          <nav>
+            <a href="#" class="home">
+              <i class="fa-solid fa-house"></i>
+              <span>홈</span>
+            </a>
+            <span class="separator">&gt;</span>
+            <a href="#">메뉴</a>
+            <span class="separator">&gt;</span>
+            <span class="current">스트레스 풀기</span>
+          </nav>
+        </div><!-- //.top_url -->
+        <div class="title">
+          <h2>스트레스 풀기</h2>
+          <p>스트레스 풀 때에는 국대가 제격</p>
+        </div><!-- //.title -->
+        <div class="menu_option">
+          <button data-tab="solo">
+            <i class="fa-solid fa-user"></i> 혼자 간단히
+          </button>
+          <button data-tab="together">
+            <i class="fa-solid fa-user-group"></i> 둘이서 배부르게
+          </button>
+          <button data-tab="spicy" class="active">
+            <i class="fa-solid fa-fire"></i> 스트레스 풀기
+          </button>
+        </div><!-- //.menu_option -->
+        <div class="inner">
+          <div class="best_box">
+            <div class="left">
+              <div class="badge">재구매 1위</div><!-- //.badge -->
+              <div class="txt_box">
+                <em>국물떡볶이</em>
+                <p>4,500원</p>
+                <span>옛날 떡볶이의 진수</span>
+              </div><!-- //.txt_box -->
+            </div><!-- //.left -->
+            <div class="right">
+              <img src="img/img17.png" alt="국물떡볶이 사진">
+            </div><!-- //.right -->
+          </div><!-- //.best_box -->
+          <div class="menu_all">
+            <ul>
+              <li>
+                <img src="img/img38.png" alt="치즈떡볶이">
+                <div class="txt_box">
+                  <em>치즈떡볶이</em>
+                  <p>6,000원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img29.png" alt="납작당면떡볶이">
+                <div class="txt_box">
+                  <em>납작당면떡볶이</em>
+                  <p>6,000원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img28.png" alt="떡볶이 2인분">
+                <div class="txt_box">
+                  <em>떡볶이(2인분)</em>
+                  <p>6,900원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img26.jpg" alt="상비군세트1">
+                <div class="txt_box">
+                  <em>상비군세트1</em>
+                  <p>19,200원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img02.png" alt="떡꼬치">
+                <div class="txt_box">
+                  <em>떡꼬치</em>
+                  <p>3,000원</p>
+                </div><!-- //.txt_box -->
+              </li>
+              <li>
+                <img src="img/img41.png" alt="소떡소떡">
+                <div class="txt_box">
+                  <em>소떡소떡</em>
+                  <p>4,000원</p>
+                </div><!-- //.txt_box -->
+              </li>
+            </ul>
+          </div><!-- //.menu_all -->
+          <div class="delivery_btn">
+            <a href="#">배달앱 주문하러 가기
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div><!-- //.delivery_btn -->
+        </div><!-- //.inner -->
+      </div><!-- //.product_view #spicy_view -->
+    </main>
+    <footer>
       <div class="inner">
         <div class="top">
           <div class="f_option">
@@ -230,6 +526,7 @@
         top
       </button>
     </div><!-- //.quickbar -->
-    </div><!-- //.wrap -->
+  </div><!-- //.wrap -->
 </body>
+
 </html>
