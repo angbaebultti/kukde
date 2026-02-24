@@ -5,11 +5,6 @@ main {
   background: #fff;
 }
 
-main .inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 
 .product_view {
   display: none;
@@ -20,9 +15,9 @@ main .inner {
 }
 
 .product_intro {
-  padding: 200px 0 120px;
+  background: #ffffff;
+  padding: 160px 0 120px;
   text-align: center;
-  background: #fff;
 }
 
 .product_intro h2 {
@@ -41,12 +36,12 @@ main .inner {
 
 .situation_select {
   padding: 140px 0 160px;
-  background: #fcfcfc;
+  background: #f8f5f1;
   position: relative;
 }
 
 .situation_select h3 {
-  font-size: 34px;
+  font-size: 36px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 60px;
@@ -80,16 +75,16 @@ main .inner {
   background: #981b1b;
   color: #fff;
   border-color: #981b1b;
-  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
 .set_menu_con {
   padding: 140px 0;
-  background: #fafafa;
+  background: #f6f1ea;
 }
 
 .set_menu_con h3 {
-  font-size: 34px;
+  font-size: 42px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 90px;
@@ -107,6 +102,7 @@ main .inner {
   border-radius: 18px;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .set_menu_con li:hover {
@@ -118,28 +114,28 @@ main .inner {
   width: 100%;
   height: 220px;
   border-radius: 14px;
-  margin-bottom: 26px;
+  margin-bottom: 40px;
   object-fit: cover;
 }
 
 .set_menu_con em {
   display: block;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
 .set_menu_con p {
-  font-size: 18px;
+  font-size: 24px;
   color: #981b1b;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-weight: 500;
 }
 
 .set_menu_con span {
-  font-size: 15px;
+  font-size: 20px;
   color: #777;
-  line-height: 1.6;
+  line-height: 1.1;
 }
 
 .set_menu_con .best {
@@ -152,7 +148,6 @@ main .inner {
   color: #fff;
   border-radius: 50%;
   font-size: 13px;
-  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,7 +163,7 @@ main .inner {
 }
 
 .other_menu_con h3 {
-  font-size: 34px;
+  font-size: 36px;
   margin-bottom: 90px;
   font-weight: 600;
 }
@@ -185,6 +180,8 @@ main .inner {
   padding: 32px 24px 40px;
   border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  border: 1px solid #eee;
 }
 
 .other_menu_con li:hover {
@@ -201,21 +198,21 @@ main .inner {
 }
 
 .other_menu_con em {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   display: block;
 }
 
 .other_menu_con p {
-  font-size: 18px;
+  font-size: 20px;
   color: #981b1b;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   font-weight: 500;
 }
 
 .other_menu_con span {
-  font-size: 15px;
+  font-size: 16px;
   color: #888;
 }
 
@@ -242,12 +239,12 @@ main .inner {
 
 .sub_menu_con {
   padding: 140px 0;
-  background: #fafafa;
+  background: #fbf8f5;
   text-align: center;
 }
 
 .sub_menu_con h3 {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 600;
   margin-bottom: 60px;
 }
@@ -271,20 +268,22 @@ main .inner {
 
 .sub_category li:hover {
   transform: translateY(-6px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.06);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.06);
   border-color: #981b1b;
 }
 
 .sub_category p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   margin-bottom: 14px;
+  text-align: center
 }
 
 .sub_category a {
   font-size: 15px;
   color: #981b1b;
   font-weight: 600;
+  text-align: center;
   position: relative;
   transition: all 0.2s ease;
 }
@@ -301,6 +300,10 @@ main .inner {
 .more_small {
   font-size: 14px;
   color: #777;
+}
+
+.main_cta {
+  background: #fdf3f3;
 }
 
 

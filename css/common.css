@@ -14,10 +14,11 @@ font-family: "Roboto", sans-serif;
   --Roboto: "Roboto", sans-serif;
   --point_color: #CE902E;
   --footer_color: #AFAFAF;
-  --brand_red: #981b1b;
+  --brand_color: #981b1b;
   --brand_light_red: rgba(179, 38, 30, 0.3);
   --brand_navy: #1F2A44;
   --brand_cream: #FEE3C1;
+  --detail-bg: #f6f6f6;
 }
 
 * {
@@ -27,6 +28,7 @@ font-family: "Roboto", sans-serif;
 
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background: #fbf8f5;
 }
 
 body.menu-open {
@@ -137,8 +139,16 @@ header .gnb>li>a:hover::after {
   width: 100%;
 }
 
+header .gnb>li.yet a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+header .gnb>li.yet>a::after {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 header .gnb>li.ready>a::after {
-  background: var(--brand_red);
+  background: var(--brand_color);
 }
 
 header .all_menu {
