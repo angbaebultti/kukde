@@ -108,29 +108,6 @@ main .inner {
 
 .delivery_btn {
   text-align: center;
-  margin-top: 80px;
-}
-
-.delivery_btn a {
-  display: inline-block;
-  background: #fff;
-  border: 1px solid #981b1b;
-  color: #4d4d4d;
-  padding: 20px 80px;
-  border-radius: 16px;
-  font-size: 28px;
-  font-weight: 500;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-  transition: 0.2s ease;
-}
-
-.delivery_btn a:hover {
-  background: #981b1b;
-  color: #fff;
-}
-
-.delivery_btn {
-  text-align: center;
   margin-top: 100px;
 }
 
