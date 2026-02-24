@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-
   // swiper
 
   const swiperEl = document.querySelector(".swiper");
@@ -229,6 +228,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   }
+
+  gsap.to(".scroll_progress", {
+  width: "100%",
+  ease: "none",
+  scrollTrigger: {
+    trigger: "body",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true
+  }
+});
 
 });
 

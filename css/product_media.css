@@ -10,6 +10,24 @@
     font-size: 36px;
   }
 
+  .best_box {
+    padding: 50px 40px;
+    gap: 40px;
+  }
+
+  .best_box em {
+    font-size: 28px;
+  }
+
+  .best_box p {
+    font-size: 22px;
+  }
+
+  .best_box span {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
   .situation_select h3,
   .set_menu_con h3,
   .other_menu_con h3 {
@@ -44,6 +62,21 @@
 
 @media (max-width: 768px) {
 
+  .situation_select .menu_option {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .situation_select .menu_option button {
+    flex: 1 1 calc(50% - 14px);
+    max-width: 220px;
+    font-size: 15px;
+    padding: 14px 16px;
+  }
+
+
   .product_intro {
     padding: 100px 0 80px;
   }
@@ -57,13 +90,57 @@
     font-size: 15px;
   }
 
-  .menu_option {
-    flex-direction: column;
-    gap: 16px;
+  .product_view.detail .top_url {
+    display: none;
   }
 
-  .menu_option button {
-    width: 100%;
+  .product_view.detail .menu_option {
+    gap: 16px;
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .product_view.detail .menu_option button {
+    font-size: 15px;
+    padding: 14px 18px;
+    border-radius: 16px;
+    width: auto;
+    align-self: stretch;
+  }
+
+
+  .product_view.detail .menu_option button.active {
+    border-width: 1px;
+    font-weight: 600;
+  }
+
+
+
+  .best_box {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .best_box em {
+    font-size: 22px;
+  }
+
+  .best_box p {
+    font-size: 18px;
+  }
+
+  .best_box span {
+    font-size: 14px;
+  }
+
+  .menu_all em {
+    font-size: 16px;
+  }
+
+  .menu_all p {
+    font-size: 14px;
   }
 
   .set_menu_con {
@@ -79,6 +156,19 @@
     height: 200px;
   }
 
+  
+  .set_menu_con li em{
+    font-size: 26px;
+  }
+
+    .set_menu_con li p{
+    font-size: 20px;
+  }
+
+    .set_menu_con li span{
+    font-size: 16px;
+  }
+
   .other_menu_con ul {
     flex-direction: column;
     gap: 30px;
@@ -87,6 +177,18 @@
   .other_menu_con li {
     flex: 1;
   }
+
+    .other_menu_con li em{
+      font-size: 24px;
+    }
+
+     .other_menu_con li p{
+      font-size: 18px;
+    }
+
+     .other_menu_con li span{
+      font-size: 15px;
+    }
 
   .sub_menu_con {
     padding: 60px 0;

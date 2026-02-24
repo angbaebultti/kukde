@@ -21,14 +21,14 @@
   <script src="js/common.js"></script>
   <script src="js/product.js"></script>
 </head>
-
 <body>
+  <div class="scroll_progress"></div>
   <div class="wrap">
     <header>
       <div class="inner">
         <h1>
           <a href="index.html">
-            <img src="" alt="">
+            <img src="img/logo.svg" alt="로고">
           </a>
         </h1>
         <div class="all_menu">
@@ -92,9 +92,18 @@
           <div class="inner">
             <h3>오늘 어떤 상황이신가요?</h3>
             <div class="menu_option">
-              <button data-tab="solo">혼자 간단히</button>
-              <button data-tab="together">둘이서 배부르게</button>
-              <button data-tab="spicy">스트레스 풀기</button>
+              <button class="option_btn" data-tab="solo">
+                <i class="fa-solid fa-user"></i>
+                혼자 간단히
+              </button>
+              <button class="option_btn" data-tab="together">
+                <i class="fa-solid fa-user-group"></i>
+                둘이서 배부르게
+              </button>
+              <button class="option_btn" data-tab="spicy">
+                <i class="fa-solid fa-fire"></i>
+                스트레스 풀기
+              </button>
             </div><!-- //.menu_option -->
           </div><!-- //.inner -->
         </section><!-- //.situation_select -->

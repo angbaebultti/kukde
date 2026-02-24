@@ -8,9 +8,9 @@ main {
 }
 
 main .inner {
-  max-width: 1600px;   
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 80px;    
+  padding: 0 80px;
 }
 
 .top_url {
@@ -27,29 +27,30 @@ main .inner {
   gap: 8px;
 }
 
-.top_url nav .home span{
-    margin-left: 10px;
+.top_url nav .home span {
+  margin-left: 10px;
 }
 
-.top_url nav .home span, 
-.top_url nav a{
-    font-size: 16px;
-    font-weight: 600;
+.top_url nav .home span,
+.top_url nav a {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 
-.top_url nav .current{
-     font-size: 16px;
-    font-weight: 400;}
+.top_url nav .current {
+  font-size: 16px;
+  font-weight: 400;
+}
 
 .title {
-  padding: 100px 0 60px;  
+  padding: 100px 0 60px;
   border-bottom: 1px solid #981b1b;
   margin-bottom: 80px;
 }
 
 .title h2 {
-  font-size: 56px; 
+  font-size: 56px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -61,25 +62,40 @@ main .inner {
 
 .menu_con ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  /* 4열 */
-  gap: 90px 80px; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 90px 80px;
   padding: 0;
 }
 
 .menu_con ul li {
   list-style: none;
   text-align: center;
+  transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.menu_con ul>li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  border-color: rgba(152, 31, 31, 0.25);
 }
 
 .menu_con ul li img {
   width: 100%;
-  max-width: 260px;     
-  height: 180px;    
+  max-width: 260px;
+  height: 180px;
   object-fit: cover;
   border-radius: 20px;
-  background: #e5e7eb;  /* 이미지 없을 때 placeholder */
   margin: 0 auto 24px;
   display: block;
+  transition: transform 0.4s ease;
+}
+
+.menu_con ul li:hover img {
+  transform: scale(1.07);
 }
 
 .menu_con .txt_box span {
@@ -89,6 +105,11 @@ main .inner {
   margin-bottom: 16px;
 }
 
+.menu_con ul>li:hover span {
+  color: var(--brand_color);
+  transition: color 0.3s ease;
+}
+
 .menu_con .txt_box p {
   font-size: 18px;
   color: #21272A;
@@ -96,23 +117,34 @@ main .inner {
 
 .delivery_btn {
   text-align: center;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .delivery_btn a {
-  display: inline-block;
-  background: #fff;
-  border: 1px solid #981b1b;
-  color: #4d4d4d;
-  padding: 20px 80px;
-  border-radius: 16px;
-  font-size: 28px;
-  font-weight: 500;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 56px;
+  border-radius: 999px;
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  color: #981b1b;
+  border: 1.5px solid #981b1b;
+
+  transition: all 0.3s ease;
 }
 
 .delivery_btn a:hover {
   background: #981b1b;
   color: #fff;
+  transform: translateY(-3px);
+}
+
+.delivery_btn a i {
+  transition: transform 0.3s ease;
+}
+
+.delivery_btn a:hover i {
+  transform: translateX(6px);
 }

@@ -26,6 +26,16 @@ font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
+.scroll_progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #981b1b;
+  width: 0%;
+  z-index: 9999;
+}
+
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background: #fbf8f5;
@@ -92,8 +102,6 @@ header h1 a {
 header h1 img {
   width: 140px;
   height: 28px;
-  /* 로고는 나중에 만들고 추가하기!! */
-  background: forestgreen;
   object-fit: contain;
   display: block;
 }
@@ -329,7 +337,11 @@ footer .f_option a:nth-child(3) {
 }
 
 footer .f_option a:hover {
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(0, 0, 0, 0.95);
+}
+
+footer .f_option a:first-child:hover {
+  color: #CE902E;
 }
 
 footer .bottom {
