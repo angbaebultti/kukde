@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
+  //클릭 시 active
   function showViewById(viewId) {
 
     views.forEach(view => {
@@ -68,6 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   });
+
+
+  // 해시
 
   function checkHash() {
     const hash = window.location.hash.replace("#", "");
