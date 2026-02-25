@@ -34,14 +34,66 @@
     width: 140px;
   }
 
+  .menu_con {
+    padding: 140px 0;
+  }
+
   .menu_con .menu_box ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
   }
 
-  .menu_con {
-    padding: 140px 0;
+  .menu_con .menu_box ul li {
+    padding: 30px 22px 34px;
+    border-radius: 20px;
   }
+
+  .menu_con .menu_box ul li img {
+    width: 80%;
+    margin: 0 auto 20px;
+    border-radius: 18px;
+    aspect-ratio: 1 / 0.9;
+  }
+
+  .menu_con .menu_box .txt_box em {
+    font-size: 23px;
+  }
+
+  .menu_con .menu_box .txt_box p {
+    font-size: 17px;
+  }
+
+  .menu_con .menu_box .txt_box span {
+    font-size: 21px;
+  }
+
+  .menu_con .menu_box ul {
+    gap: 36px;
+  }
+
+
+  .review_con {
+    padding: 160px 0;
+  }
+
+  .review_con .card_box ul {
+    gap: 40px;
+  }
+
+  .review_con .card {
+    padding: 38px 28px;
+    border-radius: 20px;
+  }
+
+  .review_con .review_txt {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .review_con .stars img {
+    width: 14px;
+  }
+
 
   .value_con {
     padding: 120px 0;
@@ -50,6 +102,20 @@
   .value_con ul {
     grid-template-columns: repeat(1, 1fr);
     gap: 32px;
+    max-width: 720px;
+  }
+
+  .value_con ul li {
+    padding: 50px 40px;
+    min-height: auto;
+  }
+
+  .value_con .txt_box span {
+    font-size: 30px;
+  }
+
+  .value_con .txt_box p {
+    font-size: 18px;
   }
 
   .business_con {
@@ -122,6 +188,55 @@
     bottom: 25px;
   }
 
+  .menu_con .tit h2,
+  .review_con .tit h2 {
+    font-size: 40px;
+  }
+
+  .menu_con .tit p,
+  .review_con .tit p {
+    font-size: 22px;
+  }
+
+  .menu_con .menu_box ul li {
+    padding: 24px 18px 28px;
+  }
+
+  .menu_con .menu_box ul li img {
+    width: 80%;
+    margin: 0 auto 16px;
+    border-radius: 16px;
+    aspect-ratio: 1 / 0.9;
+  }
+
+  .menu_con .menu_box .txt_box em {
+    font-size: 22px;
+  }
+
+  .menu_con .menu_box .txt_box p {
+    font-size: 16px;
+  }
+
+  .menu_con .menu_box .txt_box span {
+    font-size: 19px;
+  }
+
+
+  .review_con .card_box ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px;
+  }
+
+  .review_con .card {
+    padding: 34px 26px;
+    border-radius: 20px;
+  }
+
+  .review_con .review_txt {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
   .review_con .review_txt {
     font-size: 16px;
   }
@@ -159,13 +274,11 @@
     gap: 16px;
   }
 
-  .business_con .btn_box a{
-    font-size: 15px;     
-    padding: 12px 22px;  
+  .business_con .btn_box a {
+    font-size: 15px;
+    padding: 12px 22px;
     border-radius: 999px;
   }
-
-
 
   .search_top {
     flex-wrap: wrap;
@@ -280,6 +393,13 @@
     margin-bottom: 28px;
   }
 
+  .menu_con .menu_box ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
   .value_con {
     padding: 90px 0;
   }
@@ -348,10 +468,10 @@
     gap: 14px;
   }
 
-  .business_con .btn_box a{
-    width: 90%;              
+  .business_con .btn_box a {
+    width: 90%;
     max-width: 360px;
-    padding: 14px 18px;    
+    padding: 14px 18px;
     font-size: 15px;
   }
 
