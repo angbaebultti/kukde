@@ -215,18 +215,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // business_con
 
-    gsap.to(".business_con .inner", {
-      opacity: 1,
-      y: 0,
-      duration: 0.8,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".business_con",
-        start: "top 80%",
-        once: true
-      }
-    });
-
+  gsap.from(".business_con .inner", {
+  opacity: 0,
+  y: 50,
+  duration: 0.8,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".business_con",
+    start: "top 80%",
+    once: true
+  }
+});
   }
 
   gsap.to(".scroll_progress", {
@@ -234,11 +233,14 @@ document.addEventListener('DOMContentLoaded', () => {
   ease: "none",
   scrollTrigger: {
     trigger: "body",
-    start: "top top",
+    start: "top 95%",
     end: "bottom bottom",
     scrub: true
   }
 });
+
+console.log("GSAP:", window.gsap);
+console.log("ST:", window.ScrollTrigger);
 
 });
 
